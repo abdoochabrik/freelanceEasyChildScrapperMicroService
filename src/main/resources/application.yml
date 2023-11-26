@@ -11,4 +11,9 @@ spring:
     name: child-scrapper
   data:
     rest:
-      basePath: /api             
+      basePath: /api        
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["health", "info", "metrics", "prometheus", "bindings", "beans", "env", "loggers", "streamsbindings", "mappings"]            
