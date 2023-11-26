@@ -18,5 +18,6 @@ public class ChildScrapperMicroserviceApplication {
     public RestTemplate restTemplate(){
         return new RestTemplate();
     }
-	
+
 }
+
