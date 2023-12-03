@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 @ControllerAdvice
 public class GlobalExceptionHandler {
-    
-    @ExceptionHandler({ParentScrapperNotFound.class})
+
+    @ExceptionHandler({ ParentScrapperNotFound.class })
     public ResponseEntity<Object> handleParentScrapperNotFoundException(ParentScrapperNotFound exception) {
         return ResponseEntity
                 .status(HttpStatus.NOT_FOUND)
